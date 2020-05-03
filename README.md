@@ -4,11 +4,11 @@ Model will be trained on ILSVRC 2014 dataset
 
 ### Paper review/ introduction
 
-The paper introduces a way to implement object loacalization without using annotated
+The paper introduces a way to implement object localization without using annotated
 data or data with bounding boxes and is based on the idea that units become more and more
 discriminative as the depth of the n/w increases.
 
-For the example implementation, I will be using VGG16 net after clipping its FC layers.
+For the example implementation, I will be using ResNet50 net after clipping its FC layers.
 
 #### Related concepts:
 ##### 1.  Class Activation Mapping
@@ -24,4 +24,7 @@ the network to identify just one discriminative part.
 Thick architecture: 
 ![basic_arch](imgs/Screenshot 2020-05-04 at 2.21.23 AM.png)
 
-
+#### Implementation Notes:
+AlexNet is not available in tf. 
+Download it from [here](http://www.cs.toronto.edu/~guerzhoy/tf_alexnet/)
+From the above download, we will be using weights for only ['conv3', 'conv2', 'conv1', 'conv5', 'conv4']
