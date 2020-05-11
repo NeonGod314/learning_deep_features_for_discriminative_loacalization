@@ -23,7 +23,6 @@ the network to identify just one discriminative part.
 
 Thick architecture: 
 ![basic_arch](imgs/basic_arch.png)
-![basic_arch](https://github.com/NeonGod314/learning_deep_features_for_discriminative_loacalization/blob/master/imgs/basic_arch.png?raw=true)
 
 
 #### Implementation Notes:
