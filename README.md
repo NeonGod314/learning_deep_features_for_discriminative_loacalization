@@ -22,9 +22,17 @@ GAP loss encourages the network to identify the extent of the object whereas GMP
 the network to identify just one discriminative part.
 
 Thick architecture: 
-![basic_arch](imgs/Screenshot 2020-05-04 at 2.21.23 AM.png)
+![basic_arch](imgs/basic_arch.png)
+![basic_arch](https://github.com/NeonGod314/learning_deep_features_for_discriminative_loacalization/blob/master/imgs/basic_arch.png?raw=true)
+
 
 #### Implementation Notes:
 AlexNet is not available in tf. 
 Download it from [here](http://www.cs.toronto.edu/~guerzhoy/tf_alexnet/)
 From the above download, we will be using weights for only ['conv3', 'conv2', 'conv1', 'conv5', 'conv4']
+
+## Update:
+(2:31pm, May12, 20) : <BR />1. Basic implementation tested on Colab with K80 gpu.
+    For 5000 data row, 2000 epochs, 64 batch size - acc: 0.40, val_acc: 0.36. 
+    "Seems to be overfitting for less amount of data for 10 classes"
+    <BR />1. Increasing the data row to 15000 seems to reduce overfitting significantly
