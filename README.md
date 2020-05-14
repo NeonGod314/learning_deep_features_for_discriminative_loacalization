@@ -34,4 +34,9 @@ From the above download, we will be using weights for only ['conv3', 'conv2', 'c
 (2:31pm, May12, 20) : <BR />1. Basic implementation tested on Colab with K80 gpu.
     For 5000 data row, 2000 epochs, 64 batch size - acc: 0.40, val_acc: 0.36. 
     "Seems to be overfitting for less amount of data for 10 classes"
-    <BR />1. Increasing the data row to 15000 seems to reduce overfitting significantly
+    <BR />1. Increasing the data row to 15000 seems to reduce overfitting significantly<br />
+    
+(10:30am, May13,20): <br/>1.Training completed for 5000 epochs, 15000 data rows. acc: 0.4071, test acc:0.37. No signs of 
+overfitting.(-> kind of constant after 500 epochs) 
+(2:40 am, May15, 20): <br/>1. Slight increase in acc after increasing data to 50000 with other _hyper remaining same.
+No signs of over fitting. Train - 0.412, Test - 0.3946. Issue: After 700 epochs terminal op buffer was full
