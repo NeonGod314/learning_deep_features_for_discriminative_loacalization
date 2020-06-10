@@ -40,3 +40,7 @@ From the above download, we will be using weights for only ['conv3', 'conv2', 'c
 overfitting.(-> kind of constant after 500 epochs) 
 (2:40 am, May15, 20): <br/>1. Slight increase in acc after increasing data to 50000 with other _hyper remaining same.
 No signs of over fitting. Train - 0.412, Test - 0.3946. Issue: After 700 epochs terminal op buffer was full
+
+**__project completed__**
+
+Was able to attain a good result
